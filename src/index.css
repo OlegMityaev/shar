@@ -84,6 +84,46 @@ body {
 
 /* Description End */
 
+.images {
+    background-color:lightskyblue;
+    padding-bottom: 107px;
+}
+.title_images {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 54px;
+    color:#000;
+    padding-bottom: 80px;
+}
+.photo {
+    block-size: 100%;
+    height: auto;
+    max-width:100% ;
+}
+.boxImages {
+    max-width:1110px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(236px, 4fr)); /* Адаптивный вариант */
+    grid-row-gap: 27px;
+    padding-bottom:105px;
+    /*amogus*/
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 545px;
+    height: 88px;
+    border-radius: 15px;
+    background: #BBD6D6;
+    border:none;
+    font-size:40px;
+}
+
 /*footer start*/
 
 .footer{
