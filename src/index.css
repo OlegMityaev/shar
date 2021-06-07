@@ -18,7 +18,7 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    margin-top: 81px;
+    margin-top: 0px;
     margin-bottom: 11px;
     font-size: 80px;
     letter-spacing: 0.09em;
@@ -89,26 +89,26 @@ body {
 
 /*card start*/
 .card-wrap {    
-    position: relative;   
+    position:relative;   
 }
+
 .card {
     padding: 5px;
     position: relative;
     background:white;   
 }
+
 .card:hover {
     transform: scale(1.02);
     z-index: 2;
-    transition-duration: .3s;
+    transition-duration: .2s;
     box-shadow: 0 0 2px 4px rgba(234, 134, 0, 1);   
     position: absolute;
     top: 0;
     right: 0;
-    /*transform: scale(1.3);*/
-
-   
-   
+    transform: scale(1.2);
 }
+
 .card:hover .card__button {
     background-color:rgba(234, 134, 0, 1) ;
 }
@@ -121,6 +121,7 @@ body {
 .card__title {
     height: 46px;
 }
+
 .card__text {
     display: none;
 }
@@ -131,6 +132,13 @@ hr {
     opacity: .4;
 }
 
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
 .card__title {
     font-size: 13px;
     line-height: 16px;
@@ -138,24 +146,26 @@ hr {
     font-family: "Arial", serif;
     margin: 5px 5px 10px;
 }
+
 .card__image {
     width: 100%;
+    height: auto;
 }
+
 .card__special-text {
-    text-transform: capitalize;
+    text-transform:capitalize;
     font-size: 18px;
     line-height: 16px;
     font-weight: bold;
 }
 
-
-.boxCard {
+.grid{
     max-width:1110px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(236px, 4fr));
-    grid-row-gap: 27px;
+    grid-template-columns: repeat(auto-fit, 236px);
     padding-bottom:105px;
+    gap:5px;
 }
 
 .cards{
@@ -184,6 +194,15 @@ hr {
     font-size:40px;
 }
 
+.center__grid {
+    margin: 100px auto;
+}
+
+@media screen  and (min-width: 320px) and (max-width: 442px){
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /*card end*/
 
@@ -195,11 +214,13 @@ hr {
     padding-top: 84px;
     padding-bottom: 84px;
 }
+
 .footer__box {
     display: flex;
     justify-content: space-between;
     margin: 0 165px;
 }
+
 .footer__text {
     font-weight: normal;
     font-size: 16px;
@@ -207,16 +228,15 @@ hr {
     color: #FFFFFF;
     margin-left: 10px;
 }
+
 .logo {
     width: 201px;
     height: 63px;
 
 }
+
 .finish {
   align-self: flex-end;
 }
-
-
-
 /*footer end*/
 
