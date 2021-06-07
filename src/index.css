@@ -18,7 +18,7 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    margin-top: 81px;
+    margin-top: 0px;
     margin-bottom: 11px;
     font-size: 80px;
     letter-spacing: 0.09em;
@@ -148,13 +148,16 @@ hr {
     font-weight: bold;
 }
 
+.center_grid {
+    margin: 100px auto;
+}
 
-.boxCard {
+.grid {
     max-width:1110px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(236px, 4fr));
-    grid-row-gap: 27px;
+    gap:5px;
     padding-bottom:105px;
 }
 
